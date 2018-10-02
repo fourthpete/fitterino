@@ -1,0 +1,14 @@
+.pop {
+  position: absolute;
+  background-color: rgba(100, 100, 100, 0.5);
+  text-align: center;
+}
+
+.prompt {
+  display: inline-block;
+  margin-top: 100px;
+  padding: 20px;
+
+  background-color: white;
+  box-shadow: 0px 0px 30px 10px #848484;
+}
