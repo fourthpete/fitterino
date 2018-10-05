@@ -42,17 +42,20 @@ function Update() {
 }
 
 class Player {
-  contructor(name, id) {
+  constructor(name, id) {
     this.name = name;
     this.pos = [0,0];
     this.El = document.createElement('DIV');
     this.El.innerHTML = name;
     this.El.setAttribute('id', id);
-    this.El.setAttribute('class', player);
+    this.El.setAttribute('class', 'player');
     space.append(this.El);
   }
 
   Update(vec) {
+    this.pos = vec[0];
 
+    this.El.style.left = this.pos[0] + 'px';
+    this.El.style.right = this.pos[1] + 'px';
   }
 }
